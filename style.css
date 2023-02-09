@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: poppins,sans-serif;
+}
+
+body {
+     background: linear-gradient(45deg ,var(--purple),var(--purple-light));
+}
+
+.bg-container{
+    background-color: rgba(139, 0, 139, 0.986);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}
+.profile-card{
+    background: #111;
+    width: 400px;
+    padding: 3rem;
+    min-height: 400;
+    border-radius: 10px;
+    position: relative;
+    color: #fff;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-card .profile-pic {
+     margin-top: 15px;
+     overflow: hidden;
+     
+}
+
+.profile-image{
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.profile-card .profile-pic img{
+    border-radius: 10px;
+}
+.profile-card .profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.profile-details .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-details .intro h1{
+     margin-top: 20px;
+}
+
+.profile-details .intro h2 {
+    background: #1d1d1d;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 400;
+    margin: 8px;
+}
+.profile-details .intro .social{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+
+
+
+.profile-details .intro .social i {
+      color: #ddd;
+      background-color: #222;
+      height: 35px;
+      width: 35px;
+      margin: 5px;
+      font-size: 16px;
+      line-height: 35px;
+      text-align: center;
+      border-radius: 5px;
+      transition: 0.5s;
+} 
+
+.profile-card .contact-info{
+   background-color: #1d1d1d;
+   padding: 15px;
+   border-radius: 10px;
+   width: 100%;
+}
+
+.profile-card .contact-info .row{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 10px 0;
+    margin: 10px;
+}
+
+.contact-info .row .icon{
+    
+    color: #fff;
+    background-color: #111;
+    text-align: center;
+    
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.row .content{
+    min-width: 70%;
+}
+.row .content span{
+    font-size: 14px;
+}
+
+.row .content span h4{
+    font-size: 16px;
+
+}
+.download-btn {
+    background: linear-gradient(45deg,#5789f5,#5789f5);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    margin-top: 1.5rem;
+}
+
+
+/*****about section ****/
+
+.about {
+    background-color: #111;
+    max-width: 800px;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+.about h1{
+    color: #f2f2f2;
+    margin-bottom: 1.1rem;
+    position: relative;
+    display: inline-block;
+    font-size: 3.5rem;
+}
+
+.about p{
+    color: rgb(158, 155, 155);
+    margin: 1.5rem;
+}
+
+.icon-color {
+     color: rgb(135, 182, 252);
+     width: 200px;
+     font-size: 40px;
+     
+}
+.icon-color2{
+    
+    width: 200px;
+    font-size: 40px;
+    color: gold;
+}
+
+.icon-color3{
+    width: 200px;
+    font-size: 45px;
+    color: rgb(248, 37, 79);
+
+}
+
+
+.icon-color4{
+    width: 200px;
+    font-size: 45px;
+    color: rgb(64, 15, 243);
+
+}
+
+
+
+.about h2{
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+.about .work{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.work .workbox{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid #333;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+.work .workbox .desc {
+    width: 75%;
+    color: #555;
+}
+
+.work .workbox .desc h3{
+    color: #f2f2f2;
+    margin-bottom: 3px;
+}
+
+.work .workbox .desc p{
+    margin: 0px;
+}
+
+
+@media(max-width: 768px){
+
+    .about{
+        width: 1005;
+        max-width: 400px;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .about h1{
+        font-size: 2.2rem;
+    }
+
+    .about .work {
+        grid-template-columns: repeat(1.1fr);
+        grid-template-rows: repeat(4,auto);
+    }
+}
